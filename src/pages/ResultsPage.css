@@ -1,0 +1,16 @@
+.results-page .results {
+  list-style-type: none;
+  position: absolute;
+  top: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.results-page .results .results__item {
+  display: flex;
+  gap: 1rem;
+  flex-direction: row;
+  align-items: baseline;
+  text-align: left;
+  color: #939393;
+}

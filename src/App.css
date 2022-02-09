@@ -7,6 +7,58 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.App {
+.app {
+  background-color: #e0e0e0;
+  width: 375px;
+  height: 667px;
+  margin: 0 auto;
+}
+
+.app__page {
+  display: flex;
+  flex-direction: column;
+  height: inherit;
+  width: inherit;
+}
+
+.page__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
+}
+
+.page__body {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem;
+  flex: 1;
+}
+
+.page__body .body__content-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  position: relative;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.page__body .body__action-row {
+  background-color: #e0e0e0;
+  width: calc(100% - 1rem);
+  padding: 1rem;
+  text-align: center;
+  flex: 0;
+}
+
+.page__body .body__action-row .body__action {
+  border: none;
+  background: transparent;
+  appearance: none;
+  font-size: 1rem;
+  cursor: pointer;
 }

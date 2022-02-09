@@ -1,11 +1,14 @@
 import { Outlet } from "react-router-dom";
 
-import './App.css';
+import "./App.css";
+import { QuizContextProvider } from "./contexts/QuizContext";
 
 function App() {
   return (
-    <div className="App">
-      <Outlet />
+    <div className="app">
+      <QuizContextProvider>
+        <Outlet />
+      </QuizContextProvider>
     </div>
   );
 }
